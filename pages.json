@@ -1,0 +1,81 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "生鲜市场"
+			}
+		},
+		{
+			"path":"pages/goods/goods-detail/goods-detail",
+			"style":{
+				"navigationBarTitleText":"商品详情"
+			}
+		}
+	    ,{
+            "path" : "pages/centre/index/index",
+            "style" :                                                                                    
+            {
+				
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/goods/shopping-cart/shopping-cart",
+            "style" :                                                                                    
+            {"app-plus":{
+					"titleNView":{
+						"titleText":"我的购物车"
+					}
+				},
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/goods/mall/mall",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": { 
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+	    "color": "#7A7E83",
+	    "selectedColor": "#e4b549",
+	    "borderStyle": "black",
+	    "backgroundColor": "#ffffff",
+	    "list": [{
+	        "pagePath": "pages/index/index",
+	        "iconPath": "static/public-img/index-icon/index.png",
+	        "selectedIconPath": "static/public-img/index-icon/ac-index.png",
+	        "text": "首页"
+	    }, {
+	        "pagePath": "pages/goods/mall/mall",
+	        "iconPath": "static/public-img/index-icon/tubiao.png",
+	        "selectedIconPath": "static/public-img/index-icon/ac-tubiao.png",
+	        "text": "商品"
+	    }, {
+	        "pagePath": "pages/goods/shopping-cart/shopping-cart",
+	        "iconPath": "static/public-img/index-icon/gouwuche.png",
+	        "selectedIconPath": "static/public-img/index-icon/ac-gouwuche.png",
+	        "text": "购物车"
+	    }, {
+	        "pagePath": "pages/centre/index/index",
+	        "iconPath": "static/public-img/index-icon/wode.png",
+	        "selectedIconPath": "static/public-img/index-icon/ac-wode.png",
+	        "text": "我的"
+	    }]
+	}
+}
